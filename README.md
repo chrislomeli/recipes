@@ -1,7 +1,5 @@
-# chrislomeli.github.io
-
-# Recipes
-Quick working examples for some typical and some unusual tasks.  Some are written in Python, some in Java, but
+## Recipes
+These short programs are quick working examples for some typical and some unusual tasks.  Some are written in Python, some in Java, but
 I have not separaetd them out because they are all script-like applications.
 
 ## Criteria for a recipe
