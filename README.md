@@ -4,13 +4,13 @@
 Quick working examples for some typical and some unusual tasks.  Some are written in Python, some in Java, but
 I have not separaetd them out because they are all script-like applications.
 
-# Criteria for a recipe
+## Criteria for a recipe
 * The recipe has to be a working program
 * But the recipe should perform only one or two tasks 
 * The task should be a connectivity task that is simple, but that a devloper might get stuck on for one reason or another.
 * As many dependencies as possible should be stripped out of the example
 
-
+## recipes
 <table>
 <tr><th>recipe</th><th>notes</th><th>language</th></tr>
 <tr><td>googleanlalytics</td><td>get data from google analytics</td><td>python</td></tr>
