@@ -1,0 +1,14 @@
+Servers/
+RemoteSystemsTempFiles
+Test*/
+target/
+bin/
+.metadata/
+.project
+.settings
+.project/
+.classpath
+*.prefs
+*.mp4
+*.clear
+*.properties

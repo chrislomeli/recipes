@@ -1,0 +1,17 @@
+Servers/
+RemoteSystemsTempFiles
+Test*/
+target/
+bin/
+.idea/
+.metadata/
+.cache-main
+.project
+.settings
+.project/
+.classpath
+*.prefs
+*.mp4
+*.clear
+*.properties
+*.iml
