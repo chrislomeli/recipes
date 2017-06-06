@@ -94,4 +94,4 @@ main
 ---------------------------------------------
 """
 if __name__ == '__main__':
-    load_to_redshift("/temp", "GOOGLE_USER_DEVICE-2017-05-26", "my_redshift_table")
+    load_to_redshift("/mylocaldirectory", "myfile.json", "my_redshift_table")
