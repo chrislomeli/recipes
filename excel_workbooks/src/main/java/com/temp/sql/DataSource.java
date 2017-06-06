@@ -22,9 +22,9 @@ import java.util.Properties;
 public class DataSource {
 	
  	public static java.sql.Connection connectJDBC() throws java.sql.SQLException, ClassNotFoundException {
-    	String redUser = "masteruser";
-    	String redPassword = "Mtwthfss123";
-    	String redConnectionString = "jdbc:postgresql://apollo.cqde1lqc3wzg.us-west-2.rds.amazonaws.com:5432/apollo";
+    	String redUser = "[DATABASE-USER]";
+    	String redPassword = "[DATABASE-PASWORD]";
+    	String redConnectionString = "[DATABASE-URL]";
 
 		// connect
        Class.forName("org.postgresql.Driver");
