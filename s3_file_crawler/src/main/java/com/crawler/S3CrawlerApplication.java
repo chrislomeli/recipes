@@ -137,17 +137,5 @@ public class S3CrawlerApplication {
 
 		return -1;
 	}
-
-	/**
-	 * Main executable method
-	 * 
-	 */
-	public static void main(final String[] args) throws IOException {
-
-		String bucket = "datastorewest";
-		String prefix = "outgoing";
-		String pattern = "*.json";
-		walkS3Folder(bucket, prefix, pattern);
-	}
 		
 }

@@ -20,10 +20,10 @@ public class SplunkFilesyncService   {
 
 	private static final Log log = LogFactory.getLog(SplunkFilesyncService.class);
 	private Service splunkService=null;
-	private String splunkHostName = "sh30.boingo.com";		
+	private String splunkHostName = "[SPLUNK-APPLIACTION-URL]";		
 	private int splunkAPIPort =  8089;		
-	private String splunkUser = "clomeli";		
-    private String splunkPassword = "Blackphillip";		
+	private String splunkUser = "[SPLUNK-USER]";		
+    private String splunkPassword = "[SPLUNK-PASSWORD]";		
 	
 	static String searchString =
 			"search index=* sourcetype=myTopic | eval day=strftime(_time, \"%Y-%m-%d\") |  stats count by day sourcetype sourceorg";

@@ -82,10 +82,13 @@ public class AvroFileUtility {
 	public static void main(final String[] commandLineArguments)  {
 
 		String filename = "c:\\temp\\mytempfile.avro";
+		
+		// create some beans to save into avro
 		List<ProducerDataWrapper> producerdata = new ArrayList<>();
 		producerdata.add(new ProducerDataWrapper("mytopic", "orginal-file-name", "this is my first line"));
 		producerdata.add(new ProducerDataWrapper("mytopic", "orginal-file-name", "this is my second line"));
 
+		// write to avro file
 		for (ProducerDataWrapper data : producerdata) 
 			writeToAvroFile(data.producerData,filename);
 

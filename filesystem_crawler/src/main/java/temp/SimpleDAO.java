@@ -12,9 +12,9 @@ public class SimpleDAO  {
 
 	
 	 	public static java.sql.Connection connectJDBC() throws java.sql.SQLException, ClassNotFoundException {
-	    	String redUser = "clomeli";
-	    	String redPassword = "chinois1";
-	    	String redConnectionString = "jdbc:postgresql://test.capthgbewe7n.us-west-1.rds.amazonaws.com:5432/postgres";
+	    	String redUser = "[YOUR-DB-USERNAME]";
+	    	String redPassword = "[YOUR-DB-PASSWORD]";
+	    	String redConnectionString = "[YOUR-JDBC-URL]";
 
 			// connect
 	       Class.forName("org.postgresql.Driver");
