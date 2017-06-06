@@ -1,16 +1,16 @@
 #Amazon Redshift connect string
-RED_HOST = "bi-prod-redshift-cluster.ctzjqu1zsbry.us-west-2.redshift.amazonaws.com"
-RED_DB =    "mount_olympus"
-RED_SCHEMA = "development"
-RED_USER =  "bi_etl"
-RED_PASS =  "Mtwthfss!123"
+RED_HOST = "REDSHIFT_CLUSTER.redshift.amazonaws.com"
+RED_DB =    "[REDSHIFT-DATABASE]"
+RED_SCHEMA = "[REDSHIFT-SCHEMA]"
+RED_USER =  "[REDSHIFT-USER]"
+RED_PASS =  "[REDSHIFT-PASSWORD]"
 RED_PORT =  "5439"
 
 # Amamzon S3 information - we'll use this to determine the bucket and folder to write to
-S3_BUCKET = "bi-etl-prod"
-S3_PREFIX = "test"
-AWS_ACCESS_KEY_ID =   "AKIAJV7MGKUC4CRGNYAA"
-AWS_SECRET_ACCESS_KEY =   "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"
+S3_BUCKET = "[AWS-S3-BUCKET]"
+S3_PREFIX = "[TOP-LEVEL-FOLDER]"
+AWS_ACCESS_KEY_ID =   "[AWS-S3-ACCESS-KEY]"
+AWS_SECRET_ACCESS_KEY =   "[AWS-S3-SECRET-KEY]"
 
 
 
