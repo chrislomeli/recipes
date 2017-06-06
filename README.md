@@ -11,15 +11,17 @@ I have not separaetd them out because they are all script-like applications.
 * As many dependencies as possible should be stripped out of the example
 
 
-
-googleanlalytics|get data from google analytics|python
-read_smartsheets|	get data from smartsheets|	python
-pyredshift|	load files into a redshift table|	python
-filesystem_crawler|	read a directory manage the files there|	java
-splunk_filename_sync|	get log file statistics from Splunk|	java
-s3_file_crawler|	scan an AWS s3 folder|	java
-avro_file_utility|	archive avro data to a local disk|	java
-tcp_listener|	create a tcp/ip server with Mina|	java
-kafka_writer|	write data to kafka|	java
-pdf_invoice|	output data to a pdf using Apache POI|	java
-sql_workbook|	output data to excel|	java
+<table>
+<tr><th>recipe</th><th>notes</th><th>language</th></tr>
+<tr><td>googleanlalytics</td><td>get data from google analytics</td><td>python</td></tr>
+<tr><td>read_smartsheets</td><td>get data from smartsheets</td><td>python</td></tr>
+<tr><td>pyredshift</td><td>load files into a redshift table</td><td>python</td></tr>
+<tr><td>filesystem_crawler</td><td>read a directory manage the files there</td><td>java</td></tr>
+<tr><td>splunk_filename_sync</td><td>get log file statistics from Splunk</td><td>	java</td></tr>
+<tr><td>s3_file_crawler</td><td>scan an AWS s3 folder</td><td>java</td></tr>
+<tr><td>avro_file_utility</td><td>archive avro data to a local disk</td><td>java</td></tr>
+<tr><td>tcp_listener</td><td>create a tcp/ip server with Mina</td><td>java</td></tr>
+<tr><td>kafka_writer</td><td>write data to kafka</td><td>	java</td></tr>
+<tr><td>pdf_invoice</td><td>output data to a pdf using Apache POI</td><td>java</td></tr>
+<tr><td>sql_workbook</td><td>output data to excel</td><td>java</td></tr>
+</table>
