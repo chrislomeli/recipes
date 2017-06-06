@@ -5,7 +5,7 @@ A simple python app to read a few different google analytics reports and get the
 that can be loaded into a database.
 
 # motivation
-It's nice to be able to get google analtics data to fill out a dashboard or even join to internal data.
+It's sometimes helpful to include google analtics data to fill out a dashboard or even join to internal data.
 
 # contents
 * gaMain.py:  The main program and all flow logic
