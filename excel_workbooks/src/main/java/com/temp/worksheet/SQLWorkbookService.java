@@ -59,7 +59,6 @@ public class SQLWorkbookService  {
 	public void createWorksheet(SQLStatementAdapter sql) throws IOException, SQLException, ClassNotFoundException {
 		
 		String sheetId=sql.getLabelName();
-		int colCount =0;
 		
 
 		/*
@@ -83,8 +82,6 @@ public class SQLWorkbookService  {
 
 			Object o = sql.arguments.get(i-1);
 			
-			String classname = o.getClass().getName();
-
 			if (o.getClass().equals(Integer.class)) {
 				preparedStmt.setInt(i, (int)o);
 		    }
@@ -125,7 +122,6 @@ public class SQLWorkbookService  {
 			for (int i = 1; i <= rsmd.getColumnCount(); i++) {
 
 				int type = rsmd.getColumnType(i);
-				String colName = rsmd.getColumnName(i);
 				String labelName = rsmd.getColumnLabel(i);
 				
 				if (printHeading) labels.add(labelName);

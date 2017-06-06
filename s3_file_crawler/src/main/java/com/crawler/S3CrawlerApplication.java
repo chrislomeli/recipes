@@ -1,7 +1,6 @@
 package com.crawler;
 
 
-import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.nio.file.PathMatcher;
@@ -11,11 +10,7 @@ import java.util.StringJoiner;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang.SystemUtils;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.joda.time.DateTime;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
@@ -81,12 +76,6 @@ public class S3CrawlerApplication {
 
 					if (key.endsWith("/"))
 						continue;
-
-					String baseName = key;
-					int pos = 0;
-					if ((pos = key.lastIndexOf("/")) > 0) {
-						baseName = key.substring(pos + 1);
-					}
 
 					// does this file match what we are looking for ?
 					// for other uses we could just use a java or regex match instead

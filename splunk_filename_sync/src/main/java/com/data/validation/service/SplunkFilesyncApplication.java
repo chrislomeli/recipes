@@ -1,8 +1,5 @@
 package com.data.validation.service;
 
-import java.io.IOException;
-
-import org.apache.commons.configuration.ConfigurationException;
 import org.joda.time.DateTime;
 
 

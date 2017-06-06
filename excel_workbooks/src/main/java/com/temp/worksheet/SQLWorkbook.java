@@ -2,11 +2,9 @@ package com.temp.worksheet;
 
 import java.awt.Color;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -92,8 +90,6 @@ public class SQLWorkbook {
 
 		Worksheet wsheet = worksheets.get(id);
 
-		
-		XSSFSheet sheet = wsheet.getXssfSheet();
 		Row row = wsheet.nextRow();
 
 		int i=0;
@@ -122,7 +118,6 @@ public class SQLWorkbook {
 	public void setRow(String id, List<Object> values) {
 		
         Worksheet wsheet = worksheets.get(id);
-        XSSFSheet sheet = wsheet.getXssfSheet();
 		Row row = wsheet.nextRow();
 		wsheet.column_count = Math.max( values.size(), wsheet.column_count );
 		

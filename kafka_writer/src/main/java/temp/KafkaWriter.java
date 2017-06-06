@@ -6,7 +6,6 @@ import java.lang.reflect.Type;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.Socket;
-import java.net.SocketAddress;
 import java.util.Properties;
 
 import org.apache.avro.Schema;
@@ -19,8 +18,6 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
 import org.apache.kafka.common.serialization.ByteArraySerializer;
 import org.apache.kafka.common.serialization.StringSerializer;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -45,9 +42,6 @@ public class KafkaWriter  {
 //	String KAFKA_LISTENERS ="192.167.101.8:9092,192.166.190.235:9092,192.34.50.248:9092";  // looks more like this in production
 //	String KAFKA_ACKS = 2;
 //	String KAFKA_TIMEOUT = 3000;
-	
-	
-	private final static DateTimeFormatter dateTimeFormatter = DateTimeFormat.forPattern("YYYYMMddHH");
 	
     private final static ObjectMapper JSON = new ObjectMapper();
     static {
@@ -151,8 +145,8 @@ public class KafkaWriter  {
 		
 		System.out.println(String.format("pinging kafka listeners..."));
 		
-		for (int i=0; i<listeners.length; i++) {
-			String[] dataum = listeners[i].split(":");
+		for (String listener : listeners) {
+			String[] dataum = listener.split(":");
 			String server = dataum[0];
 			int localPort = Integer.parseInt(dataum[1]);
 			System.out.print(String.format("\ttesting %s : %d ...", server, localPort));

@@ -7,7 +7,6 @@ import java.util.List;
 
 import org.joda.time.DateTime;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class Statement implements Serializable {
 

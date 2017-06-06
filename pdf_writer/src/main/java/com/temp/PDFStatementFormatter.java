@@ -104,8 +104,6 @@ public class PDFStatementFormatter {
         Document document = new Document(PageSize.LETTER);
         document.setMargins(45, 45, 45, 45);
         
-        DateTime dt = statement.getStartDate();
-        
 		float logoScale = 75;
 		
          
@@ -121,7 +119,6 @@ public class PDFStatementFormatter {
          *  logo and address block
          */
         document.add(getLogo(logofilename, logoScale));
-        Paragraph addr = new Paragraph();
          document.add(Chunk.NEWLINE);
          document.add(Chunk.NEWLINE);
         
@@ -438,8 +435,6 @@ public class PDFStatementFormatter {
         itable.getDefaultCell().setBackgroundColor(BaseColor.WHITE);
         itable.getDefaultCell().setBorderColor(BaseColor.WHITE);
 
-        DecimalFormat quant = new DecimalFormat("#.00"); 
-        DecimalFormat number = new DecimalFormat("#.000"); 
         DecimalFormat ratefmt = new DecimalFormat("0.000000"); 
        
         

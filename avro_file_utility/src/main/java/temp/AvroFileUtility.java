@@ -51,7 +51,6 @@ public class AvroFileUtility {
 		
 		Schema schema = ReflectData.get().getSchema(ProducerData.class);
 		ReflectDatumReader<Object> datumReader = new ReflectDatumReader<Object>(schema);
-		ReflectDatumWriter<Object> datumWriter = new ReflectDatumWriter<Object>(schema);
 
 		ProducerData avro = null;
 		try (DataFileReader<Object> dataFileReader = new DataFileReader<Object>(file, datumReader)) {
