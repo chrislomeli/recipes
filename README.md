@@ -1,6 +1,5 @@
 ## Recipes
-These short programs are quick working examples for some typical and some unusual tasks.  Some are written in Python, some in Java, but
-I have not separaetd them out because they are all script-like applications.
+These short programs are quick working examples for some typical and some unusual tasks.  Some are written in Python, some in Java.  I have not separated them by language because they are all example applications.
 
 ## Criteria for a recipe
 * The recipe has to be a working program
