@@ -26,9 +26,9 @@ public class S3CrawlerApplication {
 
 	static boolean GLOB_TEST = true;
 
-	static String AWS_ACCESS_KEY = "AKIAI4SZ5Q3UMNHYU2OQ";
+	static String AWS_ACCESS_KEY = "[ACCESS-KEY]";
 
-	static String AWS_SECRET_KEY = "08snfExrIdCFljh1FEsXZ0gDmouz2SxIhi3hCzRq";
+	static String AWS_SECRET_KEY = "[AWS-SECRET-KEY]";
 
 	/**
 	 * S3 client
