@@ -1,5 +1,5 @@
 ## avro file utility
-A simple utility to demonstrate reading and storing a non-serialized avro file to local disk.
+A simple utility to demonstrate reading and writing of a non-serialized avro file to local disk
 
 
 ##motivation
