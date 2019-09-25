@@ -7,6 +7,8 @@ These short programs are quick working examples for some typical and some unusua
 * The task should be a connectivity task that is simple, but that a devloper might get stuck on for one reason or another.
 * As many dependencies as possible should be stripped out of the example
 
+GitHub: https://github.com/chrislomeli/recipes/edit/master
+
 ## recipes
 <table>
 <tr><th>recipe</th><th>notes</th><th>language</th></tr>
